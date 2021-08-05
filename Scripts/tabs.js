@@ -1,4 +1,4 @@
-function openVerticalTab(evt, tabName) {
+function openVerticalTab(button, tabName) {
   var i, maintabcontent, maintablinks;
   tabcontent = document.getElementsByClassName("maintabcontent");
   for (i = 0; i < maintabcontent.length; i++) {
@@ -9,10 +9,10 @@ function openVerticalTab(evt, tabName) {
     maintablinks[i].className = tablinks[i].className.replace(" active", "");
   }
   document.getElementById(tabName).style.display = "block";
-  evt.currentTarget.className += " active";
+  button.classList.add("active");
 }
 
-function openTab(evt, tabName) {
+function openTab(button, tabName) {
   var i, tabcontent, tablinks;
   tabcontent = document.getElementsByClassName("tabcontent");
   for (i = 0; i < tabcontent.length; i++) {
@@ -23,5 +23,11 @@ function openTab(evt, tabName) {
     tablinks[i].className = tablinks[i].className.replace(" active", "");
   }
   document.getElementById(tabName).style.display = "block";
-  evt.currentTarget.className += " active";
+  button.classList.add("active");
 }
+
+$(document).ready(function() {
+  // Attach click events 
+  $("#CandiesTab").click(function() { openVerticalTab(this, "Candies") });
+  $("#ProductionTab").click(function() { openTab(this, "Production") });
+})

@@ -1,3 +1,1 @@
-// lolb ruh
-// lil
-// lol
+console.log("Test");
