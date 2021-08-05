@@ -1,10 +1,10 @@
 function openVerticalTab(button, tabName) {
   var i, maintabcontent, maintablinks;
-  tabcontent = document.getElementsByClassName("maintabcontent");
+  maintabcontent = document.getElementsByClassName("maintabcontent");
   for (i = 0; i < maintabcontent.length; i++) {
     maintabcontent[i].style.display = "none";
   }
-  tablinks = document.getElementsByClassName("maintablinks");
+  maintablinks = document.getElementsByClassName("maintablinks");
   for (i = 0; i < maintablinks.length; i++) {
     maintablinks[i].className = tablinks[i].className.replace(" active", "");
   }
