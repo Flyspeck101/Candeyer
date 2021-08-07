@@ -103,14 +103,14 @@ button {
 /* Change background color of buttons on hover */
 .tab button:hover {
   font-family: "uni_sansregular";
-  background-color: #333;
+  background-color: #222;
   font-style: italic;
 }
 
 /* Create an active/current tablink class */
 .tab button.active {
   font-family: "uni_sansregular";
-  background-color: #222;
+  background-color: #333;
   font-style: italic;
   font-weight: bold;
 }
