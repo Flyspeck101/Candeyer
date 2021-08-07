@@ -1,13 +1,33 @@
+
+@font-face {
+    font-family: 'uni_sansregular';
+    src: url('uni_sans_regular-webfont.woff2') format('woff2'),
+         url('uni_sans_regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 body {
-  font-family: "Uni Sans";
+  font-family: "uni_sansregular";
   background: black;
   color: white;
+  font-size: 17;
+}
+
+button {
+  background: black;
+  color: white;
+  border: 1px solid white;
+  font-family: "uni_sansregular";
+  font-size: 17;
 }
 
 * {box-sizing: border-box}
 
 /* Style the tab */
 .maintab {
+  font-family: "uni_sansregular";
   float: left;
   border: 1px solid #ccc;
   background-color: #0e0e0e;
@@ -17,6 +37,7 @@ body {
 
 /* Style the buttons inside the tab */
 .maintab button {
+  font-family: "uni_sansregular";
   display: block;
   background-color: inherit;
   color: white;
@@ -32,16 +53,19 @@ body {
 
 /* Change background color of buttons on hover */
 .maintab button:hover {
+  font-family: "uni_sansregular";
   background-color: #222;
 }
 
 /* Create an active/current "tab button" class */
 .maintab button.active {
+  font-family: "uni_sansregular";
   background-color: #333;
 }
 
 /* Style the tab content */
 .maintabcontent {
+  font-family: "uni_sansregular";
   float: left;
   border: 1px solid #333;
   width: 90%;
@@ -50,6 +74,7 @@ body {
 }
 
 .tab {
+  font-family: "uni_sansregular";
   overflow: hidden;
   border: 1px solid #ccc;
   background-color: #0e0e0e;
@@ -60,6 +85,7 @@ body {
 
 /* Style the buttons inside the tab */
 .tab button {
+  font-family: "uni_sansregular";
   background-color: inherit;
   color: white;
   float: left;
@@ -73,16 +99,19 @@ body {
 
 /* Change background color of buttons on hover */
 .tab button:hover {
+  font-family: "uni_sansregular";
   background-color: #333;
 }
 
 /* Create an active/current tablink class */
 .tab button.active {
+  font-family: "uni_sansregular";
   background-color: #222;
 }
 
 /* Style the tab content */
 .tabcontent {
+  font-family: "uni_sansregular";
   display: none;
   padding: 6px 12px;
   border: 1px solid #222  ;
