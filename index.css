@@ -54,12 +54,15 @@ button {
 /* Change background color of buttons on hover */
 .maintab button:hover {
   font-family: "uni_sansregular";
+  font-style: italic;
   background-color: #222;
 }
 
 /* Create an active/current "tab button" class */
 .maintab button.active {
   font-family: "uni_sansregular";
+  font-style: italic;
+  font-weight: bold;
   background-color: #333;
 }
 
@@ -101,12 +104,15 @@ button {
 .tab button:hover {
   font-family: "uni_sansregular";
   background-color: #333;
+  font-style: italic;
 }
 
 /* Create an active/current tablink class */
 .tab button.active {
   font-family: "uni_sansregular";
   background-color: #222;
+  font-style: italic;
+  font-weight: bold;
 }
 
 /* Style the tab content */
