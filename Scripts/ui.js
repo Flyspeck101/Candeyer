@@ -1,3 +1,12 @@
+// UI Variables 
+
+let hover = {
+  "Candies": false,
+  "Sweetness": false
+}
+
+// UI functions 
+
 function openVerticalTab(button, tabName) {
   var i, maintabcontent, maintablinks;
   maintabcontent = document.getElementsByClassName("maintabcontent");
@@ -26,8 +35,14 @@ function openTab(button, tabName) {
   button.classList.add("active");
 }
 
+function updateResource(value, rate, id) {
+  $("#" + id + " span").html(String(value) + hover[id] ? " (" + rate + "/s)" : "");
+}
+
 $(document).ready(function() {
   // Attach click events 
   $("#CandiesTab").click(function() { openVerticalTab(this, "Candies") });
   $("#ProductionTab").click(function() { openTab(this, "Production") });
+  $("#resourceCandies").hover(function() { hover["Candies"] = true; }, function() { hover["Candies"] = false; })
+  $("#resourceSweetness").hover(function() { hover["Sweetness"] = true; }, function() { hover["Sweetness"] = false; })
 })

@@ -70,8 +70,8 @@ button {
 .maintabcontent {
   font-family: "uni_sansregular";
   float: left;
-  border: 1px solid #333;
-  width: 90%;
+  border: 1px solid #fff;
+  width: 80%;
   height: 100%;
   border-left: none;
 }
@@ -120,8 +120,25 @@ button {
   font-family: "uni_sansregular";
   display: none;
   padding: 6px 12px;
-  border: 1px solid #222  ;
+  border: 1px solid #fff  ;
   border-top: none;
   width: 100%;
   height: 96%;
+}
+
+.resource-table {
+  font-family: "uni_sansregular";
+  padding: 6px 12px;
+  border: 1px solid #fff;
+  width: 10%;
+  height: 50%;
+  float: right;
+}
+
+.resource-table p {
+  font-weight: bolder;
+}
+
+.resource-table span {
+  font-weight: normal;
 }
