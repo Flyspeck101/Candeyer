@@ -142,3 +142,7 @@ button {
 .resource-table span {
   font-weight: normal;
 }
+
+.rateContainer {
+  display: none;
+}

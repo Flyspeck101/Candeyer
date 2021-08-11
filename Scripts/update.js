@@ -1,6 +1,6 @@
 $(document).ready(function() {
   let resourceUpdate = setInterval(function() {
-    updateResource(0, 0, "Candies");
-    updateResource(0, 0, "Sweetness");
+    updateCandies(0);
+    updateSweetness(0);
   }, 5);
 });

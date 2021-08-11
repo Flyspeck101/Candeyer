@@ -1,9 +1,5 @@
 // UI Variables 
 
-let hover = {
-  "Candies": false,
-  "Sweetness": false
-}
 
 // UI functions 
 
@@ -35,14 +31,20 @@ function openTab(button, tabName) {
   button.classList.add("active");
 }
 
-function updateResource(value, rate, id) {
-  $("#" + id + " span").html(String(value) + hover[id] ? " (" + rate + "/s)" : "");
+function updateCandies(rate) {
+  $("#candiesQuantity").html(resources["Candies"]);
+  $("#candiesRate").html(rate);
+}
+
+function updateSweetness(rate) {
+  $("#sweetnessQuantity").html(resources["Sweetness"]);
+  $("#sweetnessRate").html(rate);
 }
 
 $(document).ready(function() {
   // Attach click events 
   $("#CandiesTab").click(function() { openVerticalTab(this, "Candies") });
   $("#ProductionTab").click(function() { openTab(this, "Production") });
-  $("#resourceCandies").hover(function() { hover["Candies"] = true; }, function() { hover["Candies"] = false; })
-  $("#resourceSweetness").hover(function() { hover["Sweetness"] = true; }, function() { hover["Sweetness"] = false; })
+  $("#resourceCandies").hover(function() { document.getElementById("candiesRateContainer").style.display = "inline"; }, function() { document.getElementById("candiesRateContainer").style.display = "none"; });
+  $("#resourceSweetness").hover(function() { document.getElementById("sweetnessRateContainer").style.display = "inline"; }, function() { document.getElementById("sweetnessRateContainer").style.display = "none"; });
 })
